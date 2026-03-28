@@ -71,7 +71,17 @@
                 "@context": "https://schema.org",
                 "@type": "BeautySalon",
                 "name": "Vira Salon",
-                "image": "https://salonvira.kezodev.my.id/images/hero-barber.png",
+                "alternateName": [
+                    "Vira Salon Sukoharjo",
+                    "Salon Vira",
+                    "Salon Vira Sukoharjo"
+                ],
+                "description": "Salon kecantikan profesional di Sukoharjo. Spesialis makeup pengantin (MUA), sewa baju pengantin & kebaya, potong rambut, smoothing, rebonding, creambath, dan perawatan rambut terlengkap. Berpengalaman 12+ tahun.",
+                "image": [
+                    "https://salonvira.kezodev.my.id/images/hero-barber.png",
+                    "https://salonvira.kezodev.my.id/images/about-salon.png",
+                    "https://salonvira.kezodev.my.id/images/service-bridal-makeup.png"
+                ],
                 "@id": "https://salonvira.kezodev.my.id/",
                 "url": "https://salonvira.kezodev.my.id/",
                 "telephone": "+6282242407499",
@@ -87,6 +97,57 @@
                     "@type": "GeoCoordinates",
                     "latitude": -7.6844845,
                     "longitude": 110.8486013
+                },
+                "areaServed": [
+                    {
+                        "@type": "City",
+                        "name": "Sukoharjo"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Karanganyar"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Solo"
+                    }
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Layanan Salon",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Potong Rambut & Hair Styling",
+                                "description": "Potongan rambut trendy sesuai bentuk wajah, dilengkapi layanan hair styling profesional."
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Perawatan Rambut",
+                                "description": "Rebonding, keriting, smoothing, toning, cuci catok, creambath, dan masker rambut."
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Makeup Pengantin & Sewa Baju",
+                                "description": "Makeup pengantin profesional (MUA) dengan sewa baju pengantin dan kebaya lengkap."
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Skincare & Facial"
+                            }
+                        }
+                    ]
                 },
                 "openingHoursSpecification": [
                     {
@@ -109,7 +170,10 @@
                         "closes": "18:00"
                     }
                 ],
-                "priceRange": "$$"
+                "priceRange": "$$",
+                "currenciesAccepted": "IDR",
+                "paymentAccepted": "Cash, Transfer Bank",
+                "sameAs": []
             }
         </script>
 
@@ -128,7 +192,7 @@
                 <a href="#" class="navbar__logo">VIRA SALON</a>
                 <nav class="navbar__nav" id="navMenu">
                     <a href="#layanan" class="navbar__link">Layanan</a>
-                    <a href="#galeri" class="navbar__link">Galeri</a>
+                    <a href="#galeri" class="navbar__link">Portofolio</a>
                     <a href="#tentang" class="navbar__link">Tentang Kami</a>
                     <a href="#testimoni" class="navbar__link">Testimoni</a>
                     <a href="#kontak" class="navbar__link">Kontak</a>
@@ -516,56 +580,56 @@
             </div>
         </section>
 
-        <!-- Tim Kami Section -->
+        <!-- Portofolio Section -->
         <section class="team" id="galeri">
             <div class="container">
                 <div class="team__header">
-                    <h2 class="section-title">Tim Kami</h2>
-                    <span class="section-dot">● Kenali para ahli</span>
+                    <h2 class="section-title">Portofolio</h2>
+                    <span class="section-dot">● Hasil Karya Kami</span>
                 </div>
                 <div class="team__grid">
                     <div class="team__member" id="team-1">
                         <img
                             src="/images/service-bridal-makeup.png"
-                            alt="Penata Rambut"
+                            alt="Makeup Pengantin - Portofolio Vira Salon Sukoharjo"
                             class="team__img"
                             loading="lazy"
                         />
                         <div class="team__overlay">
-                            <span class="team__role">Penata Rambut</span>
+                            <span class="team__role">Makeup Pengantin</span>
                         </div>
                     </div>
                     <div class="team__member" id="team-2">
                         <img
                             src="/images/service-skincare.png"
-                            alt="Ahli Perawatan Kulit"
+                            alt="Perawatan Kulit & Facial - Portofolio Vira Salon"
                             class="team__img"
                             loading="lazy"
                         />
                         <div class="team__overlay">
-                            <span class="team__role">Ahli Perawatan Kulit</span>
+                            <span class="team__role">Skincare & Facial</span>
                         </div>
                     </div>
                     <div class="team__member" id="team-3">
                         <img
                             src="/images/team-makeup-artist.png"
-                            alt="Makeup Artist"
+                            alt="Rias Pengantin - Portofolio Vira Salon Sukoharjo"
                             class="team__img"
                             loading="lazy"
                         />
                         <div class="team__overlay">
-                            <span class="team__role">Makeup Artist</span>
+                            <span class="team__role">Rias Pengantin</span>
                         </div>
                     </div>
                     <div class="team__member" id="team-4">
                         <img
                             src="/images/hero-barber.png"
-                            alt="Master Barber"
+                            alt="Potong Rambut & Styling - Portofolio Vira Salon"
                             class="team__img"
                             loading="lazy"
                         />
                         <div class="team__overlay">
-                            <span class="team__role">Master Barber</span>
+                            <span class="team__role">Potong & Styling</span>
                         </div>
                     </div>
                 </div>
@@ -640,7 +704,7 @@
                     <a href="#layanan">Layanan</a>
                     <a href="#tentang">Tentang Kami</a>
                     <a href="#testimoni">Testimoni</a>
-                    <a href="#galeri">Galeri</a>
+                    <a href="#galeri">Portofolio</a>
                 </div>
                 <div class="footer__links">
                     <h4 class="footer__heading">Layanan</h4>
